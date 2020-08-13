@@ -1,0 +1,58 @@
+<%- include('header.ejs'); %>
+
+<div class="container">
+    <div class="row marginTop">
+      <div class="col s8 offset-s2">
+        <a href="/" class="btn-flat waves-effect">
+          <i class="material-icons left">keyboard_backspace</i> Back to
+          Welcome page
+        </a>
+        <div class="col s12">
+          <h4 class="heading">Login</h4>
+          <p class="grey-text text-darken-1">
+            Don't have an account? <a class="teal-text text-lighten-1" href="/register">Register</a>
+          </p>
+        </div>
+        <form action="/login" method="POST">
+          <div class="input-field col s12">
+            <input
+              autoComplete="off"
+              name="username"
+              type="email"
+            />
+            <label htmlFor="email">Email</label>
+          </div>
+          <div class="input-field col s12">
+            <input
+              id="password"
+              name="password"
+              type="password"
+            />
+            <label htmlFor="password">Password</label>
+          </div>
+          <div class="col s12">
+            <button
+              type="submit"
+              class="btn btn-large blue lighten-5 black-text hoverable submitBtn"
+            >
+              Login
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="or-container col s4 offset-s2">
+        <div class="line-separator"></div>
+        <div class="or-label">or</div>
+        <div class="line-separator"></div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col s4 offset-s2 googleDiv"> <a class="waves-effect waves-light btn-large social google" href="/auth/google">
+          <i class="fa fa-google"></i> Sign in with google</a></div>
+    </div>
+    </div>
+  </div>
+
+  <%- include('footer.ejs'); %>

@@ -1,0 +1,27 @@
+<%- include('header.ejs') %>
+
+<div class="outerContainer">
+    <div class="innerContainer">
+        <h3>You have discoverd a lot of secrets!</h3>
+
+      <%  usersWithSecrets.forEach((user) => { %>
+            <p class="secrets"><%=user.secret%></p>
+      <%  }) %>
+            <div class="row">
+            <div class="col s6 btnContainer">
+            <a
+                href="/logout"
+                class="btn btn-large waves-effect blue lighten-5 black-text hoverable leftBtn submitBtn"
+            >Log Out </a>
+            </div>
+            <div class="col s6 btnContainer">
+            <a
+                href="/submit"
+                class="btn btn-large waves-effect waves-light hoverable rightBtn submitBtn"
+            >Post</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('footer.ejs') %>

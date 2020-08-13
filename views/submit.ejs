@@ -1,0 +1,30 @@
+<%- include('header.ejs') %>
+
+<div class="outerContainer">
+    <div class="innerContainer">
+        <div class="row">
+            <h3>Post your secret!</h3>
+            <h6>Share them anonymously!</h6>
+        </div>
+        <form action="/submit" method="POST">
+            <div class="input-field col s12">
+              <input
+                placeholder="What's your secret?"
+                name="secret"
+                type="text"
+              />
+            </div>
+            <div class="col s12">
+              <button
+                type="submit"
+                class="btn btn-large waves-effect waves-light hoverable submitBtn"
+              >
+                Post
+              </button>
+            </div>
+          </form>
+    </div>
+</div>
+
+
+<%- include('footer.ejs') %>

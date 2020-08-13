@@ -1,0 +1,76 @@
+
+/** Welcome, Home and Submit style **/
+.outerContainer {
+    text-align: center;
+}
+.innerContainer {
+    display: inline-block;
+ }
+ 
+ .innerContainer h3 {
+     font-family: Montserrat, sans-serif;
+
+ }
+ 
+ .btnContainer {
+   position: relative;
+ }
+ 
+ 
+ .rightBtn {
+     position: absolute;
+     left: 0;
+ }
+ 
+ .leftBtn {
+     position: absolute;
+     right: 0;
+ }
+ 
+ .secrets {
+    font-family: Montserrat, sans-serif;
+    background-color: #E3F2FD ;
+    border-radius: 4px;
+    padding: 10px;
+    width:800px;
+    word-break: break-all
+}
+
+ /** Register.js and Login.js style**/
+ .submitBtn {
+     width: 150px;
+     border-radius: 4px;
+     letter-spacing: 1.5px;
+     margin-top: 10px 
+ }
+ 
+ .marginTop {
+     margin-top: 30px;
+ }
+ 
+ .heading {
+     font-family: Montserrat, sans-serif;
+ }
+
+ .googleDiv {
+     padding-left: 20px !important;
+ }
+
+ .or-container {
+    align-items: center;
+    color: #838383;
+    display: flex;
+    margin: 25px 0
+}
+
+.line-separator {
+    background-color: #838383;
+    flex-grow: 5;
+    height: 1px
+}
+
+.or-label {
+    flex-grow: 1;
+    margin: 0 15px;
+    text-align: center;
+}
