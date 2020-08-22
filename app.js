@@ -34,9 +34,16 @@ mongoose.connect('mongodb://localhost:27017/userDB', {useNewUrlParser: true, use
 mongoose.set('useCreateIndex', true);
 
 const userSchema = new mongoose.Schema({
-    username: String,
-    password: String,
-    confirmPass: String,
+    username: { type: String,
+            required: true},
+    password: { type: String,
+        required: true,
+        minlength: 6
+    },
+    confirmPass: { type: String,
+        required: true,
+        minlength: 6
+    },
     googleId: String,
     secret: String
 });
